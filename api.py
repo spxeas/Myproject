@@ -16,7 +16,7 @@ gemini_model = genai.GenerativeModel('gemini-2.0-flash')
 # 預設參數 (如果API調用失敗或未提供某些值，則使用這些預設值)
 DEFAULT_WALKING_SPEED_MPS = 1.4
 DEFAULT_SECONDS_PER_PERSON = 0.5
-MIN_GREEN_LIGHT_SECONDS = 5.0
+MIN_GREEN_LIGHT_SECONDS = 6.0
 MAX_GREEN_LIGHT_SECONDS = 60.0
 
 def get_dynamic_parameters_from_ai(road_width_meters: float, num_people: int, current_time: str = None, weather: str = None) -> dict:
